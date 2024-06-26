@@ -38,6 +38,7 @@ for (let i = 0; i < dropDownsArr.length; ++i) {
     let ddButton = document.createElement('button')
     ddButton.setAttribute('class', 'dd-button plus')
     ddButton.setAttribute('id', dropDownsArr[i].id)
+    ddButton.setAttribute('title', "dropdownbutton")
     // container.appendChild(ddButton)
 
     //Create Div to house Question and Button

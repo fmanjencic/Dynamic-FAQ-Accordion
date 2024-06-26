@@ -90,4 +90,7 @@ hr {
     #container-main {
         min-width: 80%;
     }
+    .dd-entry {
+        max-width: 60%;
+    }
 }
