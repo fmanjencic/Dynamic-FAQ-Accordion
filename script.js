@@ -37,7 +37,7 @@ for (let i = 0; i < dropDownsArr.length; ++i) {
     //Create Button Element
     let ddButton = document.createElement('button')
     ddButton.setAttribute('class', 'dd-button plus')
-    ddButton.setAttribute('id', dropDownsArr[i].id)
+    ddButton.setAttribute('id', 'btn'+dropDownsArr[i].id)
     ddButton.setAttribute('title', "dropdownbutton")
     // container.appendChild(ddButton)
 
@@ -74,7 +74,7 @@ for (let i = 0; i < dropDownsArr.length; ++i) {
     }
 
     //Event Listeners to reveal dropdown
-    let testChange = document.getElementById(dropDownsArr[i].id)
+    let testChange = document.getElementById('btn'+dropDownsArr[i].id)
     let ddQuestionEvent = document.getElementById(`ddquestion${i}`);
     ddQuestionEvent.addEventListener('click', dropDownFunction);
     testChange.addEventListener('click', dropDownFunction);
